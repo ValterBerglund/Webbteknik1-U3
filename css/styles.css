@@ -55,10 +55,6 @@ nav ul {
 main {
     background-color: aqua;
     grid-area: main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .rubrik {
@@ -66,8 +62,10 @@ main {
 }
 
 /* start */
-.times {
-
+.start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .info {
@@ -75,19 +73,17 @@ main {
 }
 
 /* menu */
-.cake {
+.items {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.item {
-    border: 3px solid;
-    border-radius: 1em
-}
-
-.itemimg {
-    ;
+.cake1 {
+    background-image: url(../img/test3.png);
+    width: 200px;
+    height: 200px;
 }
 
 /* footer */

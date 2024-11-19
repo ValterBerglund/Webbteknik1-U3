@@ -1,0 +1,171 @@
+/* Allmänna stilar */
+body {
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8e7; /* Ljus bakgrundsfärg */
+    color: #5c3a2d; /* Mjuk brun för text */
+}
+
+/* Header */
+header {
+    background-color: #f2d0a4;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #8a4a34;
+}
+
+/* Navigation */
+nav {
+    background-color: #8a4a34;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.thispage {
+    background-color: #c17356; /* Aktivt eller hovrat länk */
+}
+
+/* Main */
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fff5e1; /* Lätt kontrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Rubriker */
+.rubrik {
+    color: #8a4a34; /* Mörkare brun för rubriker */
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #f2d0a4; /* Subtil linje */
+    padding-bottom: 0.5rem;
+}
+
+/* Info-text */
+.info p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Evenemang */
+.startevenemang ol {
+    list-style-type: decimal;
+    margin-left: 1.5rem;
+    padding-left: 0;
+}
+
+.startevenemang ol li {
+    margin: 0.5rem 0;
+}
+
+.startevenemang ol li a {
+    text-decoration: none;
+    color: #8a4a34;
+    font-weight: bold;
+}
+
+.startevenemang ol li a:hover {
+    color: #c17356; /* Ljusare ton vid hover */
+}
+
+/* Öppettider */
+.times ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.times ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background-color: #ffe4c2;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    background-color: #f2d0a4;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer .kontakt ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+footer .kontakt ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #5c3a2d;
+}
+
+/* Responsiv design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        padding: 0.75rem 1rem;
+    }
+
+    .rubrik {
+        font-size: 1.5rem;
+    }
+
+    .info p,
+    .times ul li {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}

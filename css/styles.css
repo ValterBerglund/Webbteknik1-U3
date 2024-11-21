@@ -16,28 +16,39 @@ div {
 html,
 body {
     min-height: 100vh;
+    font-size: 20px;
 }
 
 body {
     display: grid;
     grid-template-columns: auto repeat(2, 700px) auto;
-    grid-template-rows: min-content auto min-content;
+    grid-template-rows: min-content min-content auto min-content;
     grid-template-areas:
-        "header  header nav  nav"
+        "header  header header  header"
+        "nav    nav nav nav"
         ".   main   main    ."
         "footer   footer footer  footer";
+    font-family: 'Courier New', monospace;
+    background-color: #fdf0d5;
+    color: #3a3a3a;
+    background-image: radial-gradient(circle, #ffcc00 10%, transparent 10%),
+        radial-gradient(circle, #ff6f61 10%, transparent 10%);
+    background-size: 50px 50px, 50px 50px;
+    background-position: 0 0, 25px 25px;
 }
 
 /* header */
 header {
-    background-color: aliceblue;
+    background-color: bisque;
     grid-area: header;
+    text-align: center;
 }
 
 /* nav */
 nav {
-    background-color: antiquewhite;
+    background-color: rgb(255, 205, 55);
     grid-area: nav;
+    border: #ff6f61 solid;
 }
 
 nav ul {
@@ -47,49 +58,142 @@ nav ul {
     padding-top: 10px;
 }
 
+nav ul li {
+    border: #ed5e51 solid;
+    background-color: #ed5e51;
+    border-radius: 1em;
+    padding: 0.5rem 1rem;
+    list-style: none;
+}
+
 .thispage {
-    background-color: yellow;
+    background-color: #ff5141;
+    border: #ff5141 solid;
+    padding: 0.2em;
+    border-radius: 1em;
+}
+
+nav ul li a {
+    color: #ffcc00;
+}
+
+nav ul li a:visited {
+    color: #ffcc00;
+}
+
+.startevenemang ol li a:visited {
+    color: #ed5e51;
 }
 
 /* main */
 main {
-    background-color: aqua;
+    background-color: antiquewhite;
     grid-area: main;
+    border: #ff6f61 solid;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
 }
 
 .rubrik {
     text-align: center;
 }
 
-/* start */
-.start {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.info {
+    background-color: #fff7e6;
+    max-width: 70%;
+    border:#f4e2bf solid;
+    margin-top: 0;
+    color: #ed5e51;
 }
 
-.info {
-    max-width: 500px;
+.info ul {
+    list-style-type: square;
+}
+
+ol {
+    text-decoration: none;
+    list-style-position: inside;
+}
+
+.times, .startevenemang, .info2 {
+    text-align: center;
+    list-style-position: inside;
+    border-bottom: #ff6f61 dotted;
+}
+
+.iframe-container {
+    text-align: center;
+}
+
+iframe {
+    display: inline-block;
+}
+
+div small a {
+    color: #ed5e51;
+}
+
+div small a:visited {
+    color: #ed5e51;
 }
 
 /* menu */
-.items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.order {
+    border: #ed5e51 solid;
+    background-color: #ed5e51;
+    border-radius: 1.5em;
 }
 
-.cake1 {
-    background-image: url(../img/test3.png);
-    width: 200px;
-    height: 200px;
+.orderlink {
+    color: #ffcc00;
+}
+
+.orderlink a:visited {
+    color: #ffcc00;
+}
+
+.items {
+    background-color: #fff7e6;
+    max-width: 80%;
+    border:#f4e2bf solid;
+    margin-top: 0;
+    color: #ed5e51;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item h3, .item p, .item img {
+    padding: 0;
+    margin: 0.2em;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.item p {
+    width: 50%;
+}
+
+.cakes, .cookie, .pastry {
+    border-bottom: #ff6f61 dotted;
 }
 
 /* footer */
 footer {
-    background-color: aquamarine;
+    background-color: rgb(75, 239, 170);
     grid-area: footer;
+    border-top: aquamarine solid;
 }
 
 .kontakt {

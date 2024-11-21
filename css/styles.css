@@ -189,6 +189,12 @@ div small a:visited {
     border-bottom: #ff6f61 dotted;
 }
 
+/* form */
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
 /* footer */
 footer {
     background-color: rgb(75, 239, 170);

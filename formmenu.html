@@ -1,14 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hem - Himlagott</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
+    <header>
+        <h1>Konditoriet Himlagott</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="menu.html" class="thispage">Meny</a></li>
+            <li><a href="evenemang.html">Evenemang/Bokningar</a></li>
+            <li><a href="rapport.html">Rapport</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="info">
+            <div>
+                <h3 class="rubrik">Beställning</h3>
+                <p>Fyll i detta formulär för att beställa.</p>
+                <form method="post" action="...">
+                    <fieldset>
+                        <legend>Tårtor</legend>
+                        <label for="carrotcake">
+                            <input type="checkbox" name="carrotcake" id="carrotcake">Morotskaka<input type="number" min="0">
+                        </label>
+                        <label for="strawberrycake">
+                            <input type="checkbox" name="strawberrycake" id="strawberrycake">Jordgubbstårta<input type="number" min="0">
+                        </label>
+                        <label for="chocolatecake">
+                            <input type="checkbox" name="chocolatecake" id="chocolatecake">Chokladtårta<input type="number" min="0">
+                        </label>
+                    </fieldset>
 
+                    <fieldset>
+                        <legend>Kakor</legend>
+                        <label for="chocolateball">
+                            <input type="checkbox" name="chocolateball" id="chocolateball">Chokladboll<input type="number" min="0">
+                        </label>
+                        <label for="chocolatecookie">
+                            <input type="checkbox" name="chocolatecookie" id="chocolatecookie">Chocolate chip cookie<input type="number" min="0">
+                        </label>
+                        <label for="macaron">
+                            <input type="checkbox" name="macaron" id="macaron">Macaron<input type="number" min="0">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Bakverk</legend>
+                        <label for="cinnamonbun">
+                            <input type="checkbox" name="cinnamonbun" id="cinnamonbun">Kanelbulle<input type="number" min="0">
+                        </label>
+                        <label for="donut">
+                            <input type="checkbox" name="donut" id="donut">Munk<input type="number" min="0">
+                        </label>
+                        <label for="filledonut">
+                            <input type="checkbox" name="filledonut" id="filledonut">Fylld munk<input type="number" min="0">
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Valfri Beställning</legend>
+                        <label for="miscorder"></label>
+                        <textarea name="miscorder" id="miscorder" rows="5" cols="30">Skriv vad det är för bakverk samt antalet.</textarea>
+                        <label for="orderrecipe">Ladda upp en fil som innehåller ett recept.</label>
+                        <input type="file" name="orderrecipe" id="orderrecipe">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Kontakt uppgifter</legend>
+                        <label>Förnamn:<input type="text" name="fname" required></label>
+                        <label>Efternamn:<input type="text" name="lname" required></label>
+                        <label>Telefonnummer:<input type="tel" name="tel" required></label>
+                        <label>Email:<input type="email" name="email" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Skicka</legend>
+                        <input type="reset" value="Ångra">
+                        <input type="submit" value="Skicka">
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="kontakt">
+            <ul>
+                <li>Telefon: 012-345 6789</li>
+                <li>Email: info@himlagott.se</li>
+                <li>Adress: Vejdes plats 6, 352 52 Växjö</li>
+            </ul>
+        </div>
+        <p class="rubrik">&copy; 2024 Konditoriet Himlagott.</p>
+    </footer>
 </body>
 
 </html>
